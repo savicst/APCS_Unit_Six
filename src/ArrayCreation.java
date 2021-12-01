@@ -1,13 +1,29 @@
 public class ArrayCreation {
 
     public static double getAverage(double[] numbers) {
-
-       return 0.0; // Make sure to update this line. It is a temporary placeholder to avoid an error.
+        if(numbers.length>= 3){
+            double avg = (numbers[0] + numbers[((numbers.length)/2)] + numbers[(numbers.length-1)])/3;
+            avg = (int) (avg + 0.5);
+            return avg;
+        }
+        else{
+            return 0.0;
+        }
     }
 
     public static String stringArray(String[] friends) {
-
-        return ""; // Make sure to update this line. It is a temporary placeholder to avoid an error.
+        if (friends.length == 5){
+            String retString = "";
+            retString += friends[0].length() + " " ;
+            retString += friends[1].length() + " " ;
+            retString += friends[2].length() + " " ;
+            retString += friends[3].length() + " ";
+            retString += friends[4].length() ;
+            return retString;
+        }
+        else{
+            return "";
+        }
     }
 
     public static String countryData() {
