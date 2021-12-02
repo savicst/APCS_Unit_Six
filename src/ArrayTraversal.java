@@ -25,12 +25,7 @@ public class ArrayTraversal {
                 twoSum += 2;
             }
         }
-            if (twoSum == 8) {
-                return true;
-            }
-            else{
-                return false;
-            }
+        return twoSum == 8;
 
     }
 }

@@ -62,11 +62,11 @@ public class TraversingArraysTests {
 
     @Test
     public void sum28TestTooHigh() {
-        assertTrue(ArrayTraversal.sum28(new int[]{2, 3, 2, 2, 4, 2, 2}));
+        assertFalse(ArrayTraversal.sum28(new int[]{2, 3, 2, 2, 4, 2, 2}));
     }
 
     @Test
     public void sum28TestTooLow() {
-        assertTrue(ArrayTraversal.sum28(new int[]{1, 2, 3, 4}));
+        assertFalse(ArrayTraversal.sum28(new int[]{1, 2, 3, 4}));
     }
 }
