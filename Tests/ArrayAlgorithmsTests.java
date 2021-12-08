@@ -30,13 +30,13 @@ public class ArrayAlgorithmsTests {
     public void leftShiftSix() {
         int[] expected = {1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0};
         int[] actual = ArrayAlgorithms.leftShift(new int[] {1, 0, 1, 1, 0, 1, 0, 1}, 6);
-        assertEquals(expected, actual);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
     public void leftShiftThree() {
         int[] expected = {1, 1, 1, 0, 0, 0};
         int[] actual = ArrayAlgorithms.leftShift(new int[] {1, 1, 1}, 3);
-        assertEquals(expected, actual);
+        assertArrayEquals(expected, actual);
     }
 }
