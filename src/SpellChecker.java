@@ -44,7 +44,7 @@ public class SpellChecker {
             if (wordInDictionary(word, dictionary)) {
                 fw.write(word + " ");
             } else {
-                System.out.println("Would you like to fix the spelling of " + word + " ? y/n");
+                System.out.println("Would you like to fix the spelling of " + word + " ? Type y or n");
                 if (scanTwo.nextLine().compareTo("y") == 0) {
                     System.out.println("Enter new spelling: ");
                     fw.write(scanTwo.nextLine() + " ");
